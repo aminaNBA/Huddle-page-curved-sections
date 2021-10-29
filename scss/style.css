@@ -1,0 +1,340 @@
+.container .subscribe a, .container .main-section a {
+  text-decoration: none;
+  background-color: #ff52bf;
+  color: #f5faff;
+  padding: 20px 80px;
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 0px 2px 5px 0px #ff8fd8;
+}
+.container .subscribe a:hover, .container .main-section a:hover {
+  background-color: #ff8fd8;
+}
+
+.container .services .box_3, .container .services .box_2, .container .services .box_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .container .services .box_3, .container .services .box_2, .container .services .box_1 {
+    flex-wrap: wrap;
+  }
+}
+.container .services .box_3 .details, .container .services .box_2 .details, .container .services .box_1 .details {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .container .services .box_3 .details, .container .services .box_2 .details, .container .services .box_1 .details {
+    order: 2;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+.container .services .box_3 .details h3, .container .services .box_2 .details h3, .container .services .box_1 .details h3 {
+  font-family: "Poppins", sans-serif;
+  color: #00252e;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.container .services .box_3 .details p, .container .services .box_2 .details p, .container .services .box_1 .details p {
+  width: 80%;
+  font-weight: 400;
+  color: #00252e;
+  line-height: 1.4;
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .container .services .box_3 .details p, .container .services .box_2 .details p, .container .services .box_1 .details p {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .container .services .box_3 .image, .container .services .box_2 .image, .container .services .box_1 .image {
+    order: 1;
+  }
+}
+.container .services .box_3 .image img, .container .services .box_2 .image img, .container .services .box_1 .image img {
+  width: 80%;
+  padding-left: 50px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .container {
+    min-width: 375px;
+  }
+}
+.container header {
+  padding: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12%;
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .container header {
+    padding: 30px;
+    margin-bottom: 20%;
+  }
+}
+.container header img {
+  width: 17%;
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .container header img {
+    width: 50%;
+  }
+}
+.container header a {
+  text-decoration: none;
+  color: #ff52bf;
+  border: 1px solid #ff52bf;
+  padding: 7px 20px;
+  border-radius: 20px;
+  text-transform: capitalize;
+  font-size: 14px;
+  box-shadow: 0px 2px 2px 0px #ff8fd854;
+}
+.container header a:hover {
+  color: #ff8fd8;
+  border-color: #ff8fd8;
+}
+.container .main-section {
+  text-align: center;
+}
+.container .main-section h1 {
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  color: #00252e;
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .container .main-section h1 {
+    font-size: 33px;
+  }
+}
+.container .main-section p {
+  padding: 0 28%;
+  text-align: center;
+  line-height: 1.4em;
+  margin: 20px 0 60px;
+  color: #00252e;
+  font-weight: 400, 600, 700;
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .container .main-section p {
+    padding: 0;
+    max-width: 96%;
+  }
+}
+.container .main-section img {
+  margin-top: 110px;
+  width: 80%;
+}
+.container .static {
+  margin: 100px 200px;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .container .static {
+    flex-wrap: wrap;
+    margin: 100px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .container .static .Communities, .container .static .Messages {
+    width: 100%;
+    position: relative;
+  }
+}
+.container .static img {
+  width: 30px;
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .container .static img {
+    position: absolute;
+  }
+}
+.container .static h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  margin: 10px 0;
+  color: #00252e;
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .container .static h1 {
+    text-align: center;
+  }
+}
+.container .static p {
+  color: gray;
+  text-align: center;
+  font-size: 18px;
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .container .services {
+    text-align: center;
+  }
+}
+.container .services .bg-img {
+  width: 100%;
+  display: block;
+}
+.container .services .box_1 {
+  background-color: #f6fbff;
+}
+.container .services .box_2 {
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+.container .services .box_3 {
+  background-color: #f6fbff;
+}
+.container .subscribe {
+  text-align: center;
+  margin-top: 70px;
+}
+.container .subscribe h1 {
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  color: #00252e;
+  margin-bottom: 60px;
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .container .subscribe h1 {
+    font-size: 36px;
+  }
+}
+.container footer {
+  margin-top: 160px;
+  color: #f5faff;
+}
+.container footer .bg-footer .bg-footer2 {
+  width: 100%;
+  display: block;
+}
+.container footer .bg-footer .content-footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #00252e;
+  padding-bottom: 50px;
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .container footer .bg-footer .content-footer {
+    flex-wrap: wrap;
+  }
+}
+.container footer .bg-footer .content-footer .contact {
+  width: 40%;
+  padding-top: 80px;
+  margin-left: 0;
+  margin-right: 0;
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .container footer .bg-footer .content-footer .contact {
+    width: 100%;
+    order: 2;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+.container footer .bg-footer .content-footer .contact img {
+  width: 45%;
+}
+.container footer .bg-footer .content-footer .contact .descreption {
+  width: 70%;
+  line-height: 1.6;
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .container footer .bg-footer .content-footer .contact .descreption {
+    width: 100%;
+    order: 1;
+  }
+}
+.container footer .bg-footer .content-footer .contact .phone,
+.container footer .bg-footer .content-footer .contact .email {
+  font-size: 14px;
+}
+.container footer .bg-footer .content-footer .contact i {
+  margin-right: 10px;
+}
+.container footer .bg-footer .content-footer .contact .icons {
+  margin-top: 50px;
+  font-size: 30px;
+}
+.container footer .bg-footer .content-footer .contact .icons :hover {
+  color: #ff8fd8;
+}
+.container footer .bg-footer .content-footer .newsletter {
+  width: 40%;
+  padding-top: 60px;
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .container footer .bg-footer .content-footer .newsletter {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+.container footer .bg-footer .content-footer .newsletter h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .container footer .bg-footer .content-footer .newsletter .recieve {
+    width: 100%;
+  }
+}
+.container footer .bg-footer .content-footer .newsletter input {
+  padding: 10px 30px;
+  border-radius: 8px;
+  border: none;
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .container footer .bg-footer .content-footer .newsletter input {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.container footer .bg-footer .content-footer .newsletter p {
+  width: 50%;
+}
+.container footer .bg-footer .content-footer .newsletter a {
+  padding: 8px 20px;
+  background-color: #ff52bf;
+  color: #f5faff;
+  text-decoration: none;
+  margin-left: 20px;
+  border-radius: 8px;
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .container footer .bg-footer .content-footer .newsletter a {
+    margin-left: 210px;
+  }
+}
+.container footer .bg-footer .content-footer .newsletter a:hover {
+  background-color: #ff8fd8;
+}
+.container footer .bg-footer .content-footer .newsletter .check {
+  margin-top: 10px;
+  display: none;
+  color: #ff4242;
+}/*# sourceMappingURL=style.css.map */

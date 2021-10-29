@@ -1,0 +1,321 @@
+@import "break-points";
+@import "variables";
+@import "mixins";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: $font_body;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @include responsive(phone) {
+    min-width: 375px;
+  }
+
+  header {
+    padding: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12%;
+
+    @include responsive(phone) {
+      padding: 30px;
+      margin-bottom: 20%;
+    }
+
+    & img {
+      width: 17%;
+
+      @include responsive(phone) {
+        width: 50%;
+      }
+    }
+
+    & a {
+      text-decoration: none;
+      color: $Pink;
+      border: 1px solid $Pink;
+      padding: 7px 20px;
+      border-radius: 20px;
+      text-transform: capitalize;
+      font-size: 14px;
+      box-shadow: 0px 2px 2px 0px #ff8fd854;
+
+      &:hover {
+        color: $Light_Pink;
+        border-color: $Light_Pink;
+      }
+    }
+  }
+
+  .main-section {
+    text-align: center;
+
+    & h1 {
+      font-weight: $Weights_heading;
+      font-family: $font_heading;
+      font-size: 40px;
+      color: $Very_Dark_Cyan;
+
+      @include responsive(phone) {
+        font-size: 33px;
+      }
+    }
+
+    & p {
+      padding: 0 28%;
+      text-align: center;
+      line-height: 1.4em;
+      margin: 20px 0 60px;
+      color: $Very_Dark_Cyan;
+      font-weight: $Weights_body;
+
+      @include responsive(phone) {
+        padding: 0;
+        max-width: 96%;
+      }
+    }
+
+    & a {
+      @extend %btn;
+    }
+
+    & img {
+      margin-top: 110px;
+      width: 80%;
+    }
+  }
+
+  .static {
+    margin: 100px 200px;
+    display: flex;
+    justify-content: space-between;
+
+    @include responsive(phone) {
+      flex-wrap: wrap;
+      margin: 100px;
+    }
+
+    & .Communities,
+    & .Messages {
+      @include responsive(phone) {
+        width: 100%;
+        position: relative;
+      }
+    }
+
+    img {
+      width: 30px;
+      @include responsive(phone) {
+        position: absolute;
+      }
+    }
+
+    h1 {
+      font-family: $font_heading;
+      font-weight: $Weights_heading;
+      font-size: 72px;
+      margin: 10px 0;
+      color: $Very_Dark_Cyan;
+
+      @include responsive(phone) {
+        text-align: center;
+      }
+    }
+
+    p {
+      color: gray;
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+
+  .services {
+    @include responsive(phone) {
+      text-align: center;
+    }
+
+    & .bg-img {
+      width: 100%;
+      display: block;
+    }
+
+    & .box_1 {
+      @extend %box;
+      background-color: #f6fbff;
+    }
+
+    & .box_2 {
+      @extend %box;
+      margin-top: 100px;
+      margin-bottom: 80px;
+    }
+
+    & .box_3 {
+      @extend %box;
+      background-color: #f6fbff;
+    }
+  }
+
+  .subscribe {
+    text-align: center;
+    margin-top: 70px;
+
+    & h1 {
+      font-weight: $Weights_heading;
+      font-family: $font_heading;
+      font-size: 40px;
+
+      @include responsive(phone) {
+        font-size: 36px;
+      }
+
+      color: $Very_Dark_Cyan;
+      margin-bottom: 60px;
+    }
+
+    & a {
+      @extend %btn;
+    }
+  }
+
+  footer {
+    margin-top: 160px;
+    color: $Very_Pale_Blue;
+
+    .bg-footer {
+      .bg-footer2 {
+        width: 100%;
+        display: block;
+      }
+
+      .content-footer {
+        display: flex;
+        justify-content: space-around;
+        background-color: $Very_Dark_Cyan;
+        padding-bottom: 50px;
+
+        @include responsive(phone) {
+          flex-wrap: wrap;
+        }
+
+        .contact {
+          width: 40%;
+
+          @include responsive(phone) {
+            width: 100%;
+            order: 2;
+            padding-left: 30px;
+            padding-right: 30px;
+          }
+
+          padding-top: 80px;
+          margin-left: 0;
+          margin-right: 0;
+
+          img {
+            width: 45%;
+          }
+
+          .descreption {
+            width: 70%;
+            line-height: 1.6;
+
+            @include responsive(phone) {
+              width: 100%;
+              order: 1;
+            }
+          }
+
+          .phone,
+          .email {
+            font-size: 14px;
+          }
+
+          i {
+            margin-right: 10px;
+          }
+
+          .icons {
+            margin-top: 50px;
+            font-size: 30px;
+
+            :hover {
+              color: $Light_Pink;
+            }
+          }
+        }
+
+        .newsletter {
+          width: 40%;
+
+          @include responsive(phone) {
+            width: 100%;
+            padding-left: 30px;
+            padding-right: 30px;
+          }
+
+          padding-top: 60px;
+
+          h5 {
+            font-family: $font_heading;
+            font-weight: 400;
+            font-size: 24px;
+          }
+
+          .recieve {
+            @include responsive(phone) {
+              width: 100%;
+            }
+          }
+
+          input {
+            padding: 10px 30px;
+            border-radius: 8px;
+            border: none;
+
+            @include responsive(phone) {
+              width: 100%;
+              margin-bottom: 30px;
+            }
+          }
+
+          p {
+            width: 50%;
+          }
+
+          a {
+            padding: 8px 20px;
+            background-color: $Pink;
+            color: $Very_Pale_Blue;
+            text-decoration: none;
+            margin-left: 20px;
+            border-radius: 8px;
+
+            @include responsive(phone) {
+              margin-left: 210px;
+            }
+
+            &:hover {
+              background-color: $Light_Pink;
+            }
+          }
+
+          .check {
+            margin-top: 10px;
+            display: none;
+            color: $Light_Red;
+          }
+        }
+      }
+    }
+  }
+}

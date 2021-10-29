@@ -1,0 +1,56 @@
+%btn{
+    text-decoration: none;
+    background-color: $Pink;
+    color: $Very_Pale_Blue;
+    padding:20px 80px;
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 0px 2px 5px 0px $Light_Pink;
+    &:hover{
+        background-color: $Light_Pink;
+    }
+}
+
+
+%box{
+    display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include responsive(phone){
+                flex-wrap: wrap;
+            }
+           & .details{
+            @include responsive(phone){
+                order: 2;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+               padding-left: 70px;
+                padding-right: 70px;
+                & h3{
+                    font-family: $font_heading;
+                    color: $Very_Dark_Cyan;
+                    font-weight: $Weights_heading;
+                    font-size: 32px;
+                    margin-bottom: 20px;
+                }
+                p{
+                    width: 80%;
+                    font-weight: 400;
+                    color: $Very_Dark_Cyan;
+                    line-height:1.4;
+                    @include responsive(phone){
+                        width: 100%;
+                    }
+                }
+            }
+           & .image{
+            @include responsive(phone){
+               order:1;
+            }
+            img{
+                width: 80%;
+                padding-left: 50px;
+            }
+           }
+}
