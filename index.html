@@ -124,24 +124,7 @@
 
   </div>
 
-<script>
-let inp = document.querySelector('.inp');
-let check = document.getElementsByClassName('.check')
-let submit = document.querySelector('.submit')
-inp.addEventListener('focus',()=>{
-  inp.style.outline= '1px solid #f00';
-})
-inp.addEventListener('input',()=>{
-  inp.style.outline= 'none';
-  if(inp.value.indexOf('@')===-1){
-    check.style.display = "block";
-  }
-})
-submit.addEventListener('submit',(e)=>{
-  e.preventDefault();
-})
-
-
+<script src="main.js">
 </script>
 </body>
 </html>
